@@ -2,7 +2,7 @@ if(process.env.NODE_ENV!== 'production'){ // validação para banco de produçã
     require('dotenv').config();
 };
 const corsOptions = {
-    origin: 'https://todo-list-walter.herokuapp.com/tarefas',
+    origin: 'http://localhost:3000',
     optionSucessStatus: 200
 };
 const cors = require('cors');
