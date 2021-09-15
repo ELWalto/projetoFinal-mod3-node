@@ -20,9 +20,12 @@ module.exports ={   // exportação das rotas
         }
     },
     put: async (req,res)=>{
-        await toDoModel.updateOne({ _id: req.params.id }, req.body)
-        .then(res.status(200).send('Editado com sucesso!')) 
-        .catch(err=>res.status(404).send(err))
+        if(req.body && req.body.titulo && req.body.descricao && req.body.prioridade && req.body.estado && req.body.estado){
+            await toDoModel.updateOne({ _id: req.params.id }, req.body)
+            .then(res.status(200).send('Editado com sucesso!')) 
+        }else{
+            res.status(404).send('Erro')
+        }
     },
 
     delete: async (req,res)=>{
