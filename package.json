@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasmbrute2/backend-to-do-list-node.git"
+    "url": "https://github.com/ELWalto/projetoFinal-mod3-node.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucasmbrute2/backend-to-do-list-node/issues"
+    "url": "https://github.com/ELWalto/projetoFinal-mod3-node/issues"
   },
-  "homepage": "https://github.com/lucasmbrute2/backend-to-do-list-node#readme",
+  "homepage": "https://github.com/ELWalto/projetoFinal-mod3-node#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
