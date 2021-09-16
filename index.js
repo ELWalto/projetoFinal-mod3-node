@@ -1,10 +1,10 @@
 if(process.env.NODE_ENV!== 'production'){ // validação para banco de produção "heroku"
     require('dotenv').config();
 };
-const corsOptions = {
-    origin: 'https://todo-list-walter.herokuapp.com/tarefas',
-    optionSucessStatus: 200
-};
+// const corsOptions = {
+//     origin: 'https://todo-list-walter.herokuapp.com/tarefas',
+//     optionSucessStatus: 200
+// };
 const cors = require('cors');
 const express = require('express');
 const app = express();
@@ -20,7 +20,7 @@ Connect(db_url,db_user,db_password,db_data); // parametros de conexão
 
 app.use(express.json());  
 app.use('/tarefas',tarefaRota);
-app.use(cors(corsOptions));
+app.use(cors());
 app.get('/',(req,res)=>{
     res.status(404).send('informe a rota desejada na URL');
 });
