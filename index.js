@@ -1,10 +1,7 @@
 if(process.env.NODE_ENV!== 'production'){ // validação para banco de produção "heroku"
     require('dotenv').config();
 };
-const corsOptions = {
-    origin: 'http://localhost:3000',
-    optionSucessStatus: 200
-};
+
 const cors = require('cors');
 const express = require('express');
 const app = express();
